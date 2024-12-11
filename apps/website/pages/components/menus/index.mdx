@@ -1,6 +1,6 @@
 ---
-title: "Dropdown Menu Components"
-description: "Beautifully designed dropdown menu components with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly."
+title: "Menu Components"
+description: "Beautifully designed menu components with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly."
 ---
 
 import { getPagesUnderRoute } from 'nextra/context'
@@ -8,15 +8,15 @@ import Link from 'next/link'
 import {Cards, Card} from "nextra/components"
 import Image from 'next/image'
 
-# Dropdown Menu Components
+# Menu Components
 
-<p className="component-description">Beautifully designed dropdown menu components with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly.</p>
+<p className="component-description">Beautifully designed menu components with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly.</p>
 
 <br />
 
 export function BlogIndex() {
-  const currentPageTitle = "Dropdown Menu Components";
-  return getPagesUnderRoute('/components/dropdown-menus').filter(page => page.meta?.title !== currentPageTitle && page.frontMatter?.title !== currentPageTitle).map(page => {
+  const currentPageTitle = "Menu Components";
+  return getPagesUnderRoute('/components/menus').filter(page => page.meta?.title !== currentPageTitle && page.frontMatter?.title !== currentPageTitle).map(page => {
     return (
       <ShowcaseCard title={page.meta?.title || page.frontMatter?.title || page.name} href={page.route}>
         <Image src={page.frontMatter?.image} alt={page.frontMatter?.title} width={500} height={500} />

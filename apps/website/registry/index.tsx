@@ -68,6 +68,11 @@ const ui: Registry = {
     type: "components:ui",
     files: ["registry/components/ui/copyable-input.tsx"],
   },
+  "disclosable-fab": {
+    name: "disclosable-fab",
+    type: "components:ui",
+    files: ["registry/components/ui/disclosable-fab.tsx"],
+  },
   dropdown: {
     name: "dropdown",
     type: "components:ui",
@@ -234,6 +239,15 @@ const example: Registry = {
     files: ["registry/components/example/copyable-input-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/example/copyable-input-demo"),
+    ),
+  },
+  "disclosable-fab-demo": {
+    name: "disclosable-fab-demo",
+    type: "components:example",
+    registryDependencies: ["disclosable-fab"],
+    files: ["registry/components/example/disclosable-fab-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/example/disclosable-fab-demo"),
     ),
   },
   "folder-hover-button-demo": {
