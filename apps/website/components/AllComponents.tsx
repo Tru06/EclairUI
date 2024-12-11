@@ -31,8 +31,8 @@ const componentsData = [
     sections: ["Components"],
   },
   {
-    title: "Dropdown Menus",
-    href: "/components/dropdown-menus",
+    title: "Menus",
+    href: "/components/menus",
     Icon: FaCaretSquareDown,
     sections: ["Trending", "Components"],
   },

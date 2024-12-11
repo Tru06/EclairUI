@@ -25,9 +25,9 @@ interface ComponentMap {
 
 export const componentMap: ComponentMap = {
   Carousels: { icon: FaImages, href: "/components/carousels" },
-  "Dropdown Menus": {
+  Menus: {
     icon: FaCaretSquareDown,
-    href: "/components/dropdown-menus",
+    href: "/components/menus",
   },
   "FAQ Sections": {
     icon: FaRegQuestionCircle,
