@@ -1,0 +1,13 @@
+{
+  "name": "disclosable-fab-demo",
+  "registryDependencies": [
+    "disclosable-fab"
+  ],
+  "files": [
+    {
+      "name": "disclosable-fab-demo.tsx",
+      "content": "\"use client\";\n\nimport React from \"react\";\nimport { FileText, Bell, File, Folder } from \"lucide-react\";\nimport DisclosableFab from \"@/components/ui/disclosable-fab\";\n\nexport default function DisclosableFabDemo() {\n  const handleTaskClick = () => {\n    console.log(\"Task clicked\");\n    // Add your task creation logic here\n  };\n\n  const handleReminderClick = () => {\n    console.log(\"Reminder clicked\");\n    // Add your reminder creation logic here\n  };\n\n  const handleNoteClick = () => {\n    console.log(\"Note clicked\");\n    // Add your note creation logic here\n  };\n\n  const handleProjectClick = () => {\n    console.log(\"Project clicked\");\n    // Add your project creation logic here\n  };\n\n  const menuItems = [\n    {\n      title: \"Task\",\n      description: \"Create a new task\",\n      icon: FileText,\n      onClick: handleTaskClick,\n    },\n    {\n      title: \"Reminder\",\n      description: \"Create reminders with alerts\",\n      icon: Bell,\n      onClick: handleReminderClick,\n    },\n    {\n      title: \"Note\",\n      description: \"Capture ideas on the fly\",\n      icon: File,\n      onClick: handleNoteClick,\n    },\n    {\n      title: \"Project\",\n      description: \"Organise better with projects\",\n      icon: Folder,\n      onClick: handleProjectClick,\n    },\n  ];\n\n  return <DisclosableFab menuItems={menuItems} width={320} height={280} />;\n}\n"
+    }
+  ],
+  "type": "components:example"
+}

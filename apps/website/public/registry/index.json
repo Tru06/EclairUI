@@ -121,6 +121,23 @@
     "type": "components:example"
   },
   {
+    "name": "disclosable-fab",
+    "files": [
+      "registry/components/ui/disclosable-fab.tsx"
+    ],
+    "type": "components:ui"
+  },
+  {
+    "name": "disclosable-fab-demo",
+    "registryDependencies": [
+      "disclosable-fab"
+    ],
+    "files": [
+      "registry/components/example/disclosable-fab-demo.tsx"
+    ],
+    "type": "components:example"
+  },
+  {
     "name": "dropdown",
     "files": [
       "registry/components/ui/dropdown.tsx"
