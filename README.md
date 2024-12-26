@@ -1,18 +1,18 @@
 <div align="center">
 
 <div align="center">
-  <img src="https://webui.gopx.dev/logo-r.png" alt="AutoForge Logo" height="250" style="border-radius: 20px;">
+  <img src="https://webui.gopx.dev/eui-r.png" alt="EclairUI Logo" height="200">
 </div>
 
-# gopx-webui
+# Eclair UI
 
-A comprehensive collection of meticulously crafted React components for web styled with Tailwind CSS and Framer Motion
+### Beautiful UI Components for Web at Your Fingertips
 
 <br />
 
-[![GitHub stars](https://img.shields.io/github/stars/GopalVerma1303/webui.gopx.svg?style=social&label=Star)](https://github.com/GopalVerma1303/webui.gopx)
-[![GitHub forks](https://img.shields.io/github/forks/GopalVerma1303/webui.gopx.svg?style=social&label=Fork)](https://github.com/GopalVerma1303/webui.gopx/fork)
-[![GitHub watchers](https://img.shields.io/github/watchers/GopalVerma1303/webui.gopx.svg?style=social&label=Watch)](https://github.com/GopalVerma1303/webui.gopx)
+[![GitHub stars](https://img.shields.io/github/stars/GopalVerma1303/EclairUI.svg?style=social&label=Star)](https://github.com/GopalVerma1303/EclairUI)
+[![GitHub forks](https://img.shields.io/github/forks/GopalVerma1303/EclairUI.svg?style=social&label=Fork)](https://github.com/GopalVerma1303/EclairUI/fork)
+[![GitHub watchers](https://img.shields.io/github/watchers/GopalVerma1303/EclairUI.svg?style=social&label=Watch)](https://github.com/GopalVerma1303/EclairUI)
 
 </div>
 
