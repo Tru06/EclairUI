@@ -46,6 +46,17 @@ const config: DocsThemeConfig = {
   head: function useHead() {
     const { title, frontMatter } = useConfig();
     const { route } = useRouter();
+    const siteName = "Eclair UI";
+    const siteUrl = "https://eclairui.gopx.dev";
+
+    // Function to generate title with conditional site name
+    const getFullTitle = (pageTitle: string | undefined) => {
+      if (!pageTitle || pageTitle === siteName) {
+        return siteName;
+      }
+      return `${pageTitle} – ${siteName}`;
+    };
+
     const socialCard =
       route === "/" || !title
         ? `${SOCIAL_MEDIA_LINKS.website.link}/og.jpeg`
@@ -54,8 +65,8 @@ const config: DocsThemeConfig = {
     const description =
       frontMatter.description ||
       "Beautiful UI Components for Web at Your Fingertips!";
-    const siteName = "eclairui.gopx.dev";
-    const siteUrl = "https://eclairui.gopx.dev";
+
+    const fullTitle = getFullTitle(title);
 
     return (
       <>
@@ -70,10 +81,7 @@ const config: DocsThemeConfig = {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${siteUrl}${route}`} />
-        <meta
-          property="og:title"
-          content={title ? `${title} – ${siteName}` : siteName}
-        />
+        <meta property="og:title" content={fullTitle} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={socialCard} />
         <meta property="og:image:width" content="1200" />
@@ -86,10 +94,7 @@ const config: DocsThemeConfig = {
         <meta name="twitter:site" content="@bettercallgopal" />
         <meta name="twitter:creator" content="@bettercallgopal" />
         <meta name="twitter:url" content={`${siteUrl}${route}`} />
-        <meta
-          name="twitter:title"
-          content={title ? `${title} – ${siteName}` : siteName}
-        />
+        <meta name="twitter:title" content={fullTitle} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={socialCard} />
 
@@ -100,35 +105,19 @@ const config: DocsThemeConfig = {
 
         {/* LinkedIn */}
         <meta property="linkedin:card" content="summary_large_image" />
-        <meta
-          property="linkedin:title"
-          content={title ? `${title} – ${siteName}` : siteName}
-        />
+        <meta property="linkedin:title" content={fullTitle} />
         <meta property="linkedin:description" content={description} />
         <meta property="linkedin:image" content={socialCard} />
 
         {/* WhatsApp */}
         <meta property="og:site_name" content={siteName} />
-        <meta
-          property="og:title"
-          content={title ? `${title} – ${siteName}` : siteName}
-        />
+        <meta property="og:title" content={fullTitle} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={socialCard} />
 
-        {/* Instagram (Note: Instagram uses Open Graph tags) */}
-        {/* Already covered by Open Graph tags */}
-
-        {/* Snapchat */}
-        <meta property="snapchat:sticker" content={socialCard} />
-        <meta property="snapchat:app_id" content="YOUR_SNAPCHAT_APP_ID" />
-
         {/* TikTok */}
         <meta property="tiktok:app_id" content="YOUR_TIKTOK_APP_ID" />
-        <meta
-          property="tiktok:title"
-          content={title ? `${title} – ${siteName}` : siteName}
-        />
+        <meta property="tiktok:title" content={fullTitle} />
         <meta property="tiktok:description" content={description} />
         <meta property="tiktok:image" content={socialCard} />
 
@@ -166,16 +155,6 @@ const config: DocsThemeConfig = {
       </>
     );
   },
-  // primaryHue: { dark: 230, light: 230 },
-  // primarySaturation: 30,
-  editLink: {
-    text: "Edit this page →",
-  },
-  feedback: {
-    content: "Report a bug →",
-    labels: "bug, feedback",
-  },
-
   sidebar: {
     titleComponent({ title, type }) {
       if (type === "separator") {
