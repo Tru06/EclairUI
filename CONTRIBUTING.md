@@ -1,64 +1,197 @@
-## Contributing
+# Contributing to EclairUI
 
-We welcome contributions to this project! Please follow these guidelines to ensure a smooth collaboration process.
+First off, thank you for considering contributing to EclairUI! It's people like you who make EclairUI a great tool for everyone. This document provides guidelines and steps for contributing.
 
-### Getting Started
+## Code of Conduct
+
+By participating in this project, you are expected to uphold our Code of Conduct. Please report unacceptable behavior to [project maintainers].
+
+## How Can I Contribute?
+
+### Reporting Bugs
+
+Before creating bug reports, please check the existing issues list as you might find that you don't need to create one. When you are creating a bug report, please include as many details as possible:
+
+- **Use a clear and descriptive title**
+- **Describe the exact steps which reproduce the problem**
+- **Provide specific examples to demonstrate the steps**
+- **Describe the behavior you observed after following the steps**
+- **Explain which behavior you expected to see instead and why**
+- **Include screenshots if possible**
+- **Include your environment details** (OS, Node.js version, pnpm version, etc.)
+
+### Suggesting Enhancements
+
+Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion, please include:
+
+- **Use a clear and descriptive title**
+- **Provide a step-by-step description of the suggested enhancement**
+- **Provide specific examples to demonstrate the steps**
+- **Describe the current behavior and explain which behavior you expected to see instead**
+- **Explain why this enhancement would be useful**
+- **List some other tools or applications where this enhancement exists**
+
+### Pull Requests
+
+- Fill in the required template
+- Do not include issue numbers in the PR title
+- Follow the TypeScript and JavaScript styleguides
+- Include thoughtfully-worded, well-structured tests
+- Document new code
+- End all files with a newline
+
+## Development Process
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/GopalVerma1303/webui.gopx.git`
-3. Install dependencies: `pnpm install`
-4. Create a new branch for your feature: `git checkout -b feature/your-feature-name`
+2. Clone your fork locally
 
-### Development Workflow
+```bash
+git clone https://github.com/your-username/EclairUI.git
+cd EclairUI
+```
 
-1. Make your changes in the appropriate directories:
-   - For website changes, work in the `apps/website` directory
-   - For shared UI components, use the `packages/ui` directory
-   - For configuration changes, modify the relevant package in `packages/`
+3. Create a new branch
 
-2. Follow the coding standards:
-   - Use TypeScript for type safety
-   - Follow the ESLint rules defined in `packages/config-eslint`
-   - Use Tailwind CSS for styling, following the configuration in `packages/config-tailwind`
+```bash
+git checkout -b feature/your-feature-name
+```
 
-3. Test your changes:
-   - Run `pnpm dev` to start the development server
-   - Ensure your changes work as expected
-   - Add or update tests if necessary
+4. Install dependencies
 
-4. Commit your changes:
-   - Use clear and concise commit messages
-   - Reference any relevant issues in your commits
+```bash
+pnpm install
+```
 
-5. Push your changes to your fork: `git push origin feature/your-feature-name`
+5. Make your changes
+6. Run tests and linting
 
-6. Open a pull request:
-   - Provide a clear title and description of your changes
-   - Link any related issues
-   - Ensure all checks pass
+```bash
+pnpm lint
+pnpm test
+```
 
-### Code Review Process
+7. Commit your changes
 
-1. A maintainer will review your pull request
-2. Address any feedback or requested changes
-3. Once approved, your changes will be merged
+```bash
+git commit -m "feat: add your feature description"
+```
 
-### Reporting Issues
+8. Push to your fork
 
-- Use the GitHub Issues tab to report bugs or suggest enhancements
-- Provide a clear title and description
-- Include steps to reproduce for bugs
-- Add relevant labels
+```bash
+git push origin feature/your-feature-name
+```
 
-### Documentation
+9. Open a Pull Request
 
-- Update the README.md if you make changes that affect the project setup or usage
-- Document new features or significant changes in the appropriate places
+## Commit Message Guidelines
 
-### Monorepo Guidelines
+We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
 
-- Respect the monorepo structure
-- Use `pnpm` for package management
-- Update `turbo.json` if you add new packages or change build processes
+- `feat:` A new feature
+- `fix:` A bug fix
+- `docs:` Documentation only changes
+- `style:` Changes that do not affect the meaning of the code
+- `refactor:` A code change that neither fixes a bug nor adds a feature
+- `perf:` A code change that improves performance
+- `test:` Adding missing tests or correcting existing tests
+- `chore:` Changes to the build process or auxiliary tools
 
-Thank you for contributing to our project!
+## Project Structure
+
+```
+├── apps/
+│   ├── website/      # Main documentation site
+│   ├── template/     # UI templates
+│   └── playground/   # Component testing
+├── packages/
+│   ├── cli/          # CLI tool
+│   ├── config-*/     # Shared configurations
+│   └── ui/           # Core components
+```
+
+### Component Development Guidelines
+
+When creating new components:
+
+1. **Directory Structure**
+
+```
+components/
+└── YourComponent/
+    ├── index.tsx
+    ├── YourComponent.test.tsx
+    ├── YourComponent.stories.tsx
+    └── README.md
+```
+
+2. **Component Checklist**
+
+- [ ] TypeScript types/interfaces
+- [ ] Proper accessibility attributes
+- [ ] Responsive design
+- [ ] Documentation
+- [ ] Unit tests
+- [ ] Storybook stories
+- [ ] Performance considerations
+
+3. **Documentation Requirements**
+
+- Component description
+- Props documentation
+- Usage examples
+- Edge cases and limitations
+- Accessibility considerations
+
+## Style Guide
+
+### TypeScript
+
+- Use functional components with hooks
+- Define proper interfaces for props
+- Use proper type imports/exports
+- Avoid `any` types
+- Use meaningful variable names
+
+### CSS/Tailwind
+
+- Follow utility-first principles
+- Use semantic class names
+- Maintain consistent spacing
+- Follow responsive design patterns
+- Use CSS variables for theming
+
+## Testing
+
+- Write unit tests for new components
+- Include integration tests where necessary
+- Test accessibility
+- Test responsive behavior
+- Test edge cases
+
+## Documentation
+
+- Update relevant documentation
+- Include inline comments for complex logic
+- Update component stories
+- Add usage examples
+- Document breaking changes
+
+## Review Process
+
+1. Automated checks must pass
+2. Two approvals from maintainers required
+3. All conversations must be resolved
+4. Documentation must be updated
+5. Tests must be included
+
+## Getting Help
+
+- Join our [Discord community](#)
+- Check out the [documentation](https://eclairui.gopx.dev)
+- Ask in GitHub Discussions
+- Reach out to maintainers
+
+## License
+
+By contributing, you agree that your contributions will be licensed under the MIT License.

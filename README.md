@@ -16,6 +16,7 @@ Beautiful UI Components for Web at Your Fingertips
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)](https://framer.com/motion)
 
 </div>
+<br />
 
 ## Overview
 

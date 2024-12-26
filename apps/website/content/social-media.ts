@@ -8,7 +8,7 @@ export type SocialProfile = {
 export const FOLLOW_US_LINKS: Record<string, SocialProfile> = {
   github: {
     username: "gopx.dev",
-    link: "https://github.com/GopalVerma1303/webui.gopx",
+    link: "https://github.com/GopalVerma1303/EclairUI",
   },
   discord: {
     username: "codedeployingsquad",
@@ -30,16 +30,16 @@ export const FOLLOW_US_LINKS: Record<string, SocialProfile> = {
 
 export const SOCIAL_MEDIA_LINKS: Record<string, SocialProfile> = {
   website: {
-    username: "webui.gopx.dev",
-    link: "https://webui.gopx.dev",
+    username: "Eclair UI",
+    link: "https://eclairui.gopx.dev",
   },
   github: {
-    username: "webui.gopx",
-    link: "https://github.com/GopalVerma1303/webui.gopx",
+    username: "Eclair UI",
+    link: "https://github.com/GopalVerma1303/EclairUI",
   },
   github_docsRepositoryBase: {
-    username: "webui.gopx",
-    link: "https://github.com/GopalVerma1303/webui.gopx/tree/main/apps/website",
+    username: "Eclair UI",
+    link: "https://github.com/GopalVerma1303/EclairUI/tree/main/apps/website",
   },
   discord: {
     username: "codedeployingsquad",
