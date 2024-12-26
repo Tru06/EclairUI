@@ -4,8 +4,8 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "GOPX WEBUI",
-  "short_name": "GOPX WEBUI",
+  "name": "Eclair UI",
+  "short_name": "Eclair UI",
   "description": "Beautiful UI Components for Web at Your Fingertips",
   "icons": [
     {

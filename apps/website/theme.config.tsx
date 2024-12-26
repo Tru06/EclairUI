@@ -11,20 +11,20 @@ import FRLink from "./components/toc/fr-link";
 const logo = (
   <div className="flex items-center gap-2">
     <Image
-      src={"/logo-r.png"}
+      src={"/eui-r.png"}
       width={30}
       height={30}
       alt="logo"
       className="dark:hidden shadow-lg dark:shadow-gray-300/50"
     />
     <Image
-      src={"/logo-r.png"}
+      src={"/eui-r.png"}
       width={30}
       height={30}
       alt="logo"
       className="hidden dark:block shadow-lg dark:shadow-gray-700/50"
     />
-    <p className=" font-bold hidden lg:inline-block">GOPX WEBUI</p>
+    <p className=" text-xl font-bold hidden lg:inline-block">Eclair UI</p>
   </div>
 );
 
@@ -38,7 +38,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter();
     if (asPath !== "/") {
       return {
-        titleTemplate: "%s - GOPX-WEBUI",
+        titleTemplate: "%s",
       };
     }
   },
@@ -54,8 +54,8 @@ const config: DocsThemeConfig = {
     const description =
       frontMatter.description ||
       "Beautiful UI Components for Web at Your Fingertips!";
-    const siteName = "webui.gopx.dev";
-    const siteUrl = "https://webui.gopx.dev";
+    const siteName = "eclairui.gopx.dev";
+    const siteUrl = "https://eclairui.gopx.dev";
 
     return (
       <>
