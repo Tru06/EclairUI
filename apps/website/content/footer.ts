@@ -8,10 +8,10 @@ import {
 
 export const FOOTER_CONTENT = {
   logo: {
-    darkImage: "/logo-r.png",
-    lightImage: "/logo-r.png",
-    alt: "webui logo",
-    title: "GOPX WEBUI",
+    darkImage: "/eui-r.png",
+    lightImage: "/eui-r.png",
+    alt: "eclair logo",
+    title: "Eclair UI",
   },
   company: {
     name: "GOPX",
