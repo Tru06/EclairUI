@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: "https://webui.gopx.dev",
+  siteUrl: "https://eclairui.gopx.dev",
   changefreq: "daily",
   priority: 1.0,
   sitemapSize: 5000,

@@ -59,9 +59,8 @@ export default async function generateRssFeed(): Promise<void> {
       ? "http://localhost:3000"
       : siteConfig.siteUrl;
   const feedOptions: FeedOptions = {
-    title: `Gopal Verma | ${siteConfig.name}`,
-    description:
-      "I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.",
+    title: `Eclair UI | ${siteConfig.name}`,
+    description: "Beautiful UI Components for Web at Your Fingertips.",
     id: site_url,
     link: site_url,
     image: `${site_url}/logo.png`,

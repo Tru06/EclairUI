@@ -1,10 +1,14 @@
 import type { Site } from "@/types";
 export const siteConfig: Site = {
-  name: "GOPX WEBUI",
-  title: "GOPX WEBUI | webui.gopx.dev",
+  name: "Eclair UI",
+  title: "Eclair UI | eclairui.gopx.dev",
   description: "Beautiful UI Components for Web at Your Fingertips!",
   keywords: [
     "Gopal Verma",
+    "eclairui",
+    "github.com/GopalVerma1303/EclairUI",
+    "eclair ui",
+    "eclairui.gopx.dev",
     "www.gopx.dev",
     "webui.gopx.dev",
     "GOPX WEBUI",
@@ -105,12 +109,12 @@ export const siteConfig: Site = {
     "curated links",
     "resources links",
   ],
-  siteUrl: "https://webui.gopx.dev",
+  siteUrl: "https://eclairui.gopx.dev",
   creator: {
     name: "Gopal Verma",
-    url: "https://gopx.dev/me",
+    url: "https://gopx.dev",
   },
-  ogImage: "https://webui.gopx.dev/og.jpeg",
+  ogImage: "https://eclairui.gopx.dev/og.jpeg",
   links: {
     x: "https://x.com/bettercallgopal",
     github: "https://github.com/GopalVerma1303",
