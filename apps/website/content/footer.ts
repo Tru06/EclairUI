@@ -14,7 +14,7 @@ export const FOOTER_CONTENT = {
     title: "Eclair UI",
   },
   company: {
-    name: "GOPX",
+    name: "Gopx.dev",
     url: "https://gopx.dev",
   },
   creator: {
@@ -35,10 +35,11 @@ export const FOOTER_CONTENT = {
     {
       title: "Resources",
       links: [
-        { name: "GOPX", url: "https://gopx.dev/" },
+        { name: "Gopx.dev", url: "https://gopx.dev/" },
+        { name: "React.js", url: "https://react.dev/" },
+        { name: "Next.js", url: "https://nextjs.org/" },
         { name: "Tailwind CSS", url: "https://tailwindcss.com/" },
         { name: "Framer Motion", url: "https://www.framer.com/motion/" },
-        { name: "GSAP", url: "https://gsap.com/" },
       ],
     },
     {
@@ -69,7 +70,7 @@ export const FOOTER_CONTENT = {
   ],
   copyright: {
     year: 2024,
-    companyName: "GOPX™",
+    companyName: "Gopx.dev™",
     companyUrl: "https://gopx.dev",
   },
   socialLinks: Object.entries(FOLLOW_US_LINKS).map(([key, value]) => ({
