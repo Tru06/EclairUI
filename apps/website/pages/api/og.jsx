@@ -13,11 +13,12 @@ export default async function handler(req) {
   const inter = await font;
   const { searchParams } = new URL(req.url);
 
-  const title = searchParams.get("title")?.slice(0, 100) || "GOPX WEBUI";
+  const title = searchParams.get("title")?.slice(0, 100) || "Eclair UI";
   const description =
     searchParams.get("description")?.slice(0, 200) ||
     "Beautiful UI Components for web at your fingertips!";
-  const image = searchParams.get("image") || "https://webui.gopx.dev/og.jpeg";
+  const image =
+    searchParams.get("image") || "https://eclairui.gopx.dev/og.jpeg";
 
   return new ImageResponse(
     (
@@ -52,10 +53,10 @@ export default async function handler(req) {
             }}
             height="30"
             width="30"
-            src="https://webui.gopx.dev/webui-dark-rounded.png"
-            alt="Gopal Verma"
+            src="https://eclairui.gopx.dev/eui-r.png"
+            alt="Eclair UI Logo"
           />
-          GOPX WEBUI
+          Eclair UI
         </div>
 
         <h1
