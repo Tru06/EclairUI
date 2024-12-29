@@ -112,7 +112,7 @@ export const siteConfig: Site = {
   siteUrl: "https://eclairui.gopx.dev",
   creator: {
     name: "Gopal Verma",
-    url: "https://gopx.dev/me",
+    url: "https://gopx.dev",
   },
   ogImage: "https://eclairui.gopx.dev/og.jpeg",
   links: {
