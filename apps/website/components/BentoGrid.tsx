@@ -135,20 +135,20 @@ const BentoGrid: React.FC = () => {
     {
       bgImage: "/assets/hero/bento/2.png",
       className: "col-span-1 row-span-1",
-      url: "/store",
+      url: "/templates",
       title: "Templates",
     },
     {
       bgImage: "/assets/hero/bento/7.png",
-      url: "/store",
+      url: "/tools/gradients",
       className: "col-span-1 row-span-1",
-      title: "Packs",
+      title: "Gradients",
     },
     {
       bgImage: "/assets/hero/bento/4.png",
       className: "col-span-1 row-span-1",
-      url: "/pricing",
-      title: "Pricing",
+      url: "/components/backgrounds/bricks",
+      title: "Backgrounds",
     },
     {
       bgImage: "/assets/hero/bento/3.png",
