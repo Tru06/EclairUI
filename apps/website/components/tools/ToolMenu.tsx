@@ -2,7 +2,6 @@
 
 import React from "react";
 import { getPagesUnderRoute } from "nextra/context";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import ToolCard from "./ToolCard"; // Make sure to import the ToolCard component
 

@@ -11,9 +11,9 @@
     "type": "page",
     "title": "Components"
   },
-  "store": {
+  "templates": {
     "type": "page",
-    "title": "Store",
+    "title": "Templates",
     "theme": {
       "layout": "raw"
     }
