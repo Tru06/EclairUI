@@ -25,13 +25,6 @@
       "layout": "raw"
     }
   },
-  "pricing": {
-    "type": "page",
-    "title": "Pricing",
-    "theme": {
-      "layout": "raw"
-    }
-  },
   "faqs": {
     "type": "page",
     "title": "FAQs",
