@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { TEMPLATES } from "@/content/store";
+import { TEMPLATES } from "@/content/templates";
 
 interface Template {
   name: string;
@@ -42,7 +42,7 @@ const TemplateItem: React.FC<{ item: Template }> = ({ item }) => {
     <div className="p-6 gap-4 flex flex-col-reverse lg:flex-row items-start lg:items-center justify-between bg-[#f1f1f1] dark:bg-[#1f1f1f] border dark:border-white/15 border-black/15 rounded-lg w-full">
       <Link
         href={item.docsLink}
-        className="flex flex-col space-y-4 flex-grow w-[380px]"
+        className="flex flex-col space-y-4 flex-grow w-[380px] py-16"
       >
         <h2 className="font-bold text-xl break-words">
           {item.name || "Portfolio template"}
@@ -51,17 +51,17 @@ const TemplateItem: React.FC<{ item: Template }> = ({ item }) => {
           {item.description ||
             "Every Portfolio template is a multi-page responsive website."}
         </p>
-        <p className="font-bold text-3xl">
-          ${item.sp}{" "}
-          <span className="opacity-60 text-sm font-light line-through">
-            ${item.cp}
-          </span>
-          <span className="opacity-80 text-green-500 text-sm  mx-2">
-            {item.sp === 0
-              ? "FREE"
-              : `${(((item.cp - item.sp) / item.cp) * 100).toFixed(2)}% off!`}
-          </span>
-        </p>
+        {/* <p className="font-bold text-3xl"> */}
+        {/*   ${item.sp}{" "} */}
+        {/*   <span className="opacity-60 text-sm font-light line-through"> */}
+        {/*     ${item.cp} */}
+        {/*   </span> */}
+        {/*   <span className="opacity-80 text-green-500 text-sm  mx-2"> */}
+        {/*     {item.sp === 0 */}
+        {/*       ? "FREE" */}
+        {/*       : `${(((item.cp - item.sp) / item.cp) * 100).toFixed(2)}% off!`} */}
+        {/*   </span> */}
+        {/* </p> */}
       </Link>
       <div className="flex flex-col sm:flex-row gap-2 w-full">
         {item.images?.slice(0, 3).map((src, index) => (
