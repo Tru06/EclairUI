@@ -4,15 +4,19 @@ description: "A customizable stacked carousel component that displays a series o
 image: "https://webui.gopx.dev/assets/components/carousels/stacked-carousel.png"
 ---
 
-import { Steps } from 'nextra/components';
-import { Tabs } from 'nextra/components';
+import { Steps } from "nextra/components";
+import { Tabs } from "nextra/components";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 import { Tweet } from "react-tweet";
 
 # Stacked Carousel
 
-<p className="opacity-80 text-lg">A customizable stacked carousel component that displays a series of images or logos with a smooth stacked scrolling effect, ideal for showcasing brand partnerships or featured content.</p>
+<p className="opacity-80 text-lg">
+  A customizable stacked carousel component that displays a series of images or
+  logos with a smooth stacked scrolling effect, ideal for showcasing brand
+  partnerships or featured content.
+</p>
 
 `Carousel` `Stacked` `Animated` `Brands`
 
@@ -23,36 +27,47 @@ import { Tweet } from "react-tweet";
 <Tabs items={["CLI", "Manual"]}>
 <Tabs.Tab>
 
-  ### Run the following command:
+### Run the following command:
+
 ```bash
 npx gopx-webui add stacked-carousel
 ```
+
 </Tabs.Tab>
 <Tabs.Tab>
 <Steps>
 
 ### Create `StackedCarousel.tsx` Component
 
-  <ComponentSource name="stacked-carousel" /> 
+{" "}
+
+<ComponentSource name="stacked-carousel" />{" "}
 
 </Steps>
 
 </Tabs.Tab>
 </Tabs>
 
-
 ## Props
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `images` | `string[]` | Required | Array of image URLs to be displayed in the carousel |
-| `width` | `number` | 300 | Width of the carousel container in pixels |
-| `height` | `number` | 400 | Height of the carousel container in pixels |
-| `borderColor` | `string` | "white" | Color of the border around each image |
-| `borderWidth` | `number` | 12 | Width of the border around each image in pixels |
-| `backgroundColor` | `string` | "#e0f1fa" | Background color of the carousel container |
-
+| Prop              | Type       | Default   | Description                                         |
+| ----------------- | ---------- | --------- | --------------------------------------------------- |
+| `images`          | `string[]` | Required  | Array of image URLs to be displayed in the carousel |
+| `width`           | `number`   | 300       | Width of the carousel container in pixels           |
+| `height`          | `number`   | 400       | Height of the carousel container in pixels          |
+| `borderColor`     | `string`   | "white"   | Color of the border around each image               |
+| `borderWidth`     | `number`   | 12        | Width of the border around each image in pixels     |
+| `backgroundColor` | `string`   | "#e0f1fa" | Background color of the carousel container          |
 
 ## Inspiration
 
-<Tweet id="1834344409992765865" />
+<div
+  style={{
+    transform: "scale(0.75)",
+    transformOrigin: "top left",
+    margin: "0 auto",
+    marginBottom: "-120px",
+  }}
+>
+  <Tweet id="1834344409992765865" />
+</div>

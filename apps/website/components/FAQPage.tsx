@@ -38,6 +38,89 @@ export const FAQPage: React.FC = () => {
         answer:
           "Absolutely! The components are highly customizable, allowing you to easily change colors, fonts, and other styles to match your brand identity.",
       },
+      {
+        question: "What types of templates do you offer?",
+        answer:
+          "We offer a diverse collection of modern templates including landing pages, dashboards, e-commerce layouts, portfolios, and blog templates. All our templates are built with Next.js, Tailwind CSS, and TypeScript for optimal performance and developer experience.",
+      },
+      {
+        question: "Are your templates responsive and mobile-friendly?",
+        answer:
+          "Yes, all our templates are fully responsive and thoroughly tested across different devices and screen sizes. They automatically adapt to provide the best user experience on desktop, tablet, and mobile devices.",
+      },
+      {
+        question: "Can I customize the templates?",
+        answer:
+          "Absolutely! Our templates are built with customization in mind. You can easily modify colors, typography, layouts, and components using Tailwind CSS classes. The TypeScript codebase is well-structured and documented for easy modifications.",
+      },
+      {
+        question: "Do the templates come with documentation?",
+        answer:
+          "Yes, each template includes comprehensive documentation covering installation, configuration, customization, and deployment. We also provide code comments and TypeScript types for better development experience.",
+      },
+    ],
+    Tools: [
+      {
+        question: "What is the Color Generator tool?",
+        answer:
+          "Our Color Generator is a powerful tool that helps you create and manage color palettes for your web projects. It generates harmonious color combinations and provides the corresponding Tailwind CSS classes and hex codes.",
+      },
+      {
+        question: "How do I use the Color Generator?",
+        answer:
+          "Simply select your base color, and the tool will automatically generate complementary, analogous, or monochromatic color schemes. You can adjust brightness, saturation, and hue to fine-tune your palette.",
+      },
+      {
+        question: "Can I export the generated colors?",
+        answer:
+          "Yes, you can export colors in multiple formats including Tailwind CSS classes, hex codes, RGB values, and HSL values. You can also copy individual colors or the entire palette with one click.",
+      },
+      {
+        question: "Does it support dark mode colors?",
+        answer:
+          "Yes, our Color Generator automatically suggests dark mode variants for your colors, ensuring your palette works well in both light and dark themes.",
+      },
+
+      {
+        question: "What can I create with the Gradient Generator?",
+        answer:
+          "Our Gradient Generator helps you create beautiful linear and radial gradients. You can specify multiple color stops, adjust angles, and get instant previews with corresponding Tailwind CSS classes.",
+      },
+      {
+        question: "How do I customize gradients?",
+        answer:
+          "You can add multiple color stops, adjust their positions, change gradient direction, and modify opacity. The tool provides real-time preview and generates the exact CSS code you need.",
+      },
+      {
+        question: "Can I save my favorite gradients?",
+        answer:
+          "Yes, you can save your favorite gradients to your browser's local storage and access them later. You can also share gradient configurations via URL.",
+      },
+      {
+        question: "Are the gradients compatible with Tailwind CSS?",
+        answer:
+          "Absolutely! All generated gradients come with ready-to-use Tailwind CSS classes. You can also get the raw CSS if you prefer using standard CSS.",
+      },
+      {
+        question: "What features does the Shadow Generator offer?",
+        answer:
+          "Our Shadow Generator allows you to create custom box shadows with controls for offset, blur, spread, and color. It supports both outer and inner shadows with real-time preview.",
+      },
+      {
+        question: "How do I create layered shadows?",
+        answer:
+          "You can add multiple shadow layers with different properties to create complex and realistic shadow effects. Each layer can be individually customized and reordered.",
+      },
+      {
+        question: "Does it support colored shadows?",
+        answer:
+          "Yes, you can create colored shadows with custom opacity. The tool provides color picker and opacity controls for precise shadow styling.",
+      },
+      {
+        question: "How can I use the generated shadows?",
+        answer:
+          "The tool provides both Tailwind CSS classes and standard CSS code for your shadows. You can copy the code directly and use it in your projects.",
+      },
     ],
     Features: [
       {
@@ -59,28 +142,6 @@ export const FAQPage: React.FC = () => {
         question: "Can I use these components in commercial projects?",
         answer:
           "Yes, our components are licensed for commercial use, allowing you to incorporate them into your client projects without any additional fees.",
-      },
-    ],
-    Pricing: [
-      {
-        question: "How much do your components cost?",
-        answer:
-          "Our components are available at an affordable, one-time price, with no recurring fees or hidden costs.",
-      },
-      {
-        question: "Do you offer any discounts or bundle deals?",
-        answer:
-          "Yes, we offer discounts for bulk purchases and bundle deals that include multiple component packs at a reduced price.",
-      },
-      {
-        question: "What payment methods do you accept?",
-        answer:
-          "We accept various payment methods, including credit cards, PayPal, and cryptocurrency, to make it easy for you to purchase our components.",
-      },
-      {
-        question: "Do you offer a money-back guarantee?",
-        answer:
-          "We stand behind the quality of our components and offer a 30-day money-back guarantee if you're not completely satisfied with your purchase.",
       },
     ],
     Support: [
@@ -108,7 +169,7 @@ export const FAQPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen mt-[20px]">
+    <div className="min-h-screen mt-[20px] mb-36">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-center space-x-1 sm:space-x-5 mb-8 w-fit mx-auto">
           {Object.keys(faqData).map((tab) => (

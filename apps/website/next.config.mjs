@@ -15,6 +15,7 @@ const withNextra = nextra({
 const nextConfig = {
   images: {
     domains: [
+      "old.gopx.dev",
       "eclairui.gopx.dev",
       "bettercallgopal.vercel.app",
       "webui-gopx.vercel.app",

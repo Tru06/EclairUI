@@ -14,7 +14,7 @@ export const FOOTER_CONTENT = {
     title: "Eclair UI",
   },
   company: {
-    name: "Gopx.dev",
+    name: "GopxDotDev",
     url: "https://gopx.dev",
   },
   creator: {
@@ -26,16 +26,14 @@ export const FOOTER_CONTENT = {
       title: "Site",
       links: [
         { name: "Components", url: "/components" },
-        { name: "Store", url: "/store" },
+        { name: "Templates", url: "templates" },
         { name: "Tools", url: "/tools" },
-        { name: "Pricing", url: "/pricing" },
         { name: "FAQs", url: "/faqs" },
       ],
     },
     {
       title: "Resources",
       links: [
-        { name: "Gopx.dev", url: "https://gopx.dev/" },
         { name: "React.js", url: "https://react.dev/" },
         { name: "Next.js", url: "https://nextjs.org/" },
         { name: "Tailwind CSS", url: "https://tailwindcss.com/" },
@@ -69,8 +67,8 @@ export const FOOTER_CONTENT = {
     },
   ],
   copyright: {
-    year: 2024,
-    companyName: "Gopx.dev™",
+    year: 2025,
+    companyName: "GopxDotDev™",
     companyUrl: "https://gopx.dev",
   },
   socialLinks: Object.entries(FOLLOW_US_LINKS).map(([key, value]) => ({
